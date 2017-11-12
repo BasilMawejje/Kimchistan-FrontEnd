@@ -9,8 +9,12 @@ img.product_image {
 }
 
 .large_product_image {
-  width: fill;
+  width: stretch;
   border-radius: 50%;
+}
+
+.img.sidebar_image {
+  width: 10%;
 }
 
 .btn.btn-primary {
@@ -70,4 +74,3 @@ img.product_image {
 agm-map {
   height: 300px;
 }
-
