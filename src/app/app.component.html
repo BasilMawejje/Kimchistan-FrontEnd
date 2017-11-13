@@ -1,3 +1,5 @@
+<button (click)="onClickBuy()">Purchase</button>
+
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -86,7 +88,7 @@
     </div>
   </div>
   <br>
-  <agm-map [latitude]="lat" [longitude]="lng" [zoom]=15>
+  <agm-map [latitude]="lat" [longitude]="lng" [minZoom]=15 [maxZoom]=15>
     <agm-marker [latitude]="lat" [longitude]="lng" [iconUrl]="'../assets/circle.png'"></agm-marker>
   </agm-map>
 <footer class="footer">
