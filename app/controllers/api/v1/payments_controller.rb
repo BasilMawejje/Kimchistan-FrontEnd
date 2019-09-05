@@ -2,6 +2,8 @@ class Api::V1::PaymentsController < ApplicationController
   def create
     @amount = payment_params[:amount].to_i
 
+    Stripe.api_key = 'sk_test_30kbW7W8ql8cfpVseTZYcSPq'
+
     customer = Stripe::Customer.create(
         email: payment_params[:email],
         source: payment_params[:token]
