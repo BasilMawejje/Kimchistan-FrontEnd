@@ -13,7 +13,7 @@ class Api::V1::PaymentsController < ApplicationController
         customer: customer.id,
         amount: @amount,
         receipt_email: customer.email,
-        description: 'Tack! Din mat är redo om 30 min.',
+        description: 'Thanks! Your food is ready in 30 minutes.',
         currency: 'sek'
     )
 
@@ -29,4 +29,3 @@ class Api::V1::PaymentsController < ApplicationController
     params[:data][:attributes]
   end
 end
-
