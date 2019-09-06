@@ -6,7 +6,9 @@
 <body>
 <h2> Customer: <%= @customer_email  %>, Pickup time: <%= @pickup_time  %></h2>
 <% @cart.each do |item| %>
-  <h4><%=  item[:product_name] %> <%= item[:ingredient_name] unless item[:ingredient_name].nil? %> x<%= item[:item_quantity] %></h4>
+  <h4>Item: <%=  item[:attributes][:name] %></h4>
+  <h4>Price: <%=  item[:attributes][:price] %></h4>
+  <h4>Type: <%=  item[:attributes][:type] %></h4>
 <% end %>
 </body>
 </html>
